@@ -15,9 +15,11 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator Spawn()
     {
+        int minInclusive = 0;
+
         for (int i = 0; i < _numberEnemies; i++)
         {
-            int randomPosition = Random.Range(0, _spawnPoints.Length);
+            int randomPosition = Random.Range(minInclusive, _spawnPoints.Length);
             Instantiate(_template, _spawnPoints[randomPosition].position, Quaternion.identity);
             yield return new WaitForSeconds(_interval);
         }
