@@ -8,6 +8,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] private int _numberEnemies;
     [SerializeField] private float _interval;
 
+    private WaitForSeconds _delay;
+
     private void Start()
     {
         StartCoroutine(Spawn());
@@ -17,11 +19,13 @@ public class Spawner : MonoBehaviour
     {
         int minInclusive = 0;
 
+        _delay = new WaitForSeconds(_interval);
+
         for (int i = 0; i < _numberEnemies; i++)
         {
             int randomPosition = Random.Range(minInclusive, _spawnPoints.Length);
             Instantiate(_enemy, _spawnPoints[randomPosition].position, Quaternion.identity);
-            yield return new WaitForSeconds(_interval);
+            yield return _delay;
         }
     }
 }
