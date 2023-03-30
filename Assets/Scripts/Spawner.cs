@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private Spawner _enemy;
+    [SerializeField] private Enemy _enemy;
     [SerializeField] private Transform[] _spawnPoints;
     [SerializeField] private int _numberEnemies;
     [SerializeField] private float _interval;

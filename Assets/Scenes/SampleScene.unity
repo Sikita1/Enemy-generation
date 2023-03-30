@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330ce76b5e5a0d94eb9cebed425c866b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy: {fileID: 202582818049052742, guid: 9799358ce8a91124c9e9bff2359fe39d, type: 3}
+  _enemy: {fileID: 2373277556478322784, guid: 9799358ce8a91124c9e9bff2359fe39d, type: 3}
   _spawnPoints:
   - {fileID: 169817362}
   - {fileID: 1047249809}
@@ -404,7 +404,7 @@ Transform:
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 0.99999994}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
